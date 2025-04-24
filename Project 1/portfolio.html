@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Krishna - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">HOME</div>
+
+        <!-- Mobile Toggle -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="page.html">Page</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <p class="subheading">Get Every Single Solutions.</p>
+            <h1>My Portfolio </h1>
+            <p class="description">
+                "A showcase of my creative and professional work, featuring web design, development projects, and digital solutions that highlight my skills, passion, and commitment to delivering clean, user-friendly experiences."
+
+               
+            </p>
+            <div class="buttons">
+                <a href="#" class="btn primary">Learn More</a>
+                <a href="#" class="btn secondary">Hire Me</a>
+            </div>
+      
+    </section>
+
+    <!-- Content Section -->
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+        <p>Here are some of the projects I’ve worked on. Each one reflects my skills in design, development, and user experience. I always aim to build clean, responsive, and impactful web solutions.</p>
+    
+        <div class="portfolio-container">
+    
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+                <p>A responsive and modern portfolio website built using HTML, CSS, and JavaScript. It showcases my services, skills, and projects in a user-friendly design.</p>
+                <a href="#" class="project-link">View Project</a>
+    
+            </div>
+    
+            <div class="project-card">
+                <h3>Business Landing Page</h3>
+                <p>Designed and developed a professional landing page for a startup. Includes smooth animations, contact form, and mobile optimization using Flexbox and media queries.</p>
+                <a href="#" class="project-link">View Project</a>
+    
+            </div>
+    
+            <div class="project-card">
+                <h3>To-Do List App</h3>
+                <p>A simple yet powerful to-do list web app made with JavaScript. Features add/delete tasks, local storage, and a clean UI with light/dark mode toggle.</p>
+                <a href="#" class="project-link">View Project</a>
+    
+            </div>
+    
+            <div class="project-card">
+                <h3>Responsive Blog Template</h3>
+                <p>Created a fully responsive blog layout using HTML and CSS Grid. Great for content creators who want a sleek and organized blog design.</p>
+                <a href="consultant.html" class="project-link">View Project</a>
+    
+            </div>
+    
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>Krishna</h2>
+                <p>Creative Web Designer focused on modern and clean user experiences. Turning ideas into reality on the web!</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+         
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: krishna909077@gmail.com</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Krishna. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript: Mobile Menu Toggle -->
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+        function learnMore() {
+            alert("Thanks for showing interest! We'll be in touch soon.");
+        }
+    </script>
+
+</body>
+</html>
+

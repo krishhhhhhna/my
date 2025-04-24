@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Krishna- Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="navbar">
+    <div class="logo">About</div>
+
+    <!-- Hamburger Icon -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="page.html">Page</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <section class="hero">
+        <div class="hero-text">
+            <p class="subheading">Get Every Single Solutions.</p>
+            <h1> About me </h1>
+            <p class="description">
+                Hello! I'm a passionate web designer and developer who loves crafting sleek, modern, and responsive websites. I focus on user experience, visual design, and writing clean code to bring ideas to life.
+            </p>
+            <div class="buttons">
+                <a href="https://www.coursera.org/articles/web-developer" class="btn primary">Learn More</a>
+                <a href="" class="btn secondary">Hire Me</a>
+            </div>
+      
+    </section>
+    <section>
+        <section class="animate-on-scroll" id="web-design">
+            <h2>Web Design Expertise</h2>
+            <h3>UI/UX Focused Designs</h3>
+            <p>I create user-friendly interfaces with modern design principles, ensuring seamless interaction and aesthetic appeal.</p>
+        
+            <h3>Responsive Layouts</h3>
+            <p>Every website I design is fully responsive and mobile-friendly, delivering consistent experiences across all devices.</p>
+        
+            <h3>Modern Tools & Technologies</h3>
+            <p>I work with tools like Figma, Adobe XD, and CSS frameworks like Tailwind, Bootstrap, and modern JavaScript libraries for interactive experiences.</p>
+        
+            <h3>Brand Identity Integration</h3>
+            <p>My designs always reflect the brand's personality through consistent visual language, color schemes, and typography.</p>
+        </section>
+        
+    </section>
+    <section class="animate-on-scroll" id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li><strong>Web Design:</strong> Figma, Adobe XD, Wireframing, Prototyping</li>
+            <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, Tailwind, Bootstrap</li>
+            <li><strong>Backend:</strong> Node.js, Express, MongoDB (basic)</li>
+            <li><strong>Version Control:</strong> Git & GitHub</li>
+        </ul>
+    </section>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>Krishna</h2>
+                <p>Creative Web Designer focused on modern and clean user experiences. Turning ideas into reality on the web!</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: krishna909077@gmail.com</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Krishna. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    }
+                });
+            }, { threshold: 0.1 });
+        
+            document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+        });
+       
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
+      
+</body>
+</html>
